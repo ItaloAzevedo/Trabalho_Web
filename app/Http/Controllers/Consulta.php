@@ -6,5 +6,9 @@ use Illuminate\Http\Request;
 
 class Consulta extends Controller
 {
+       public function listar(){
+           
+       
+       }
     //
 }
