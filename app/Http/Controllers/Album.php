@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class Album extends Controller
 {
-    public function Listar(){
+    public function listar(){
     $usuario = [
         'nome'=> 'Italo',
         'sobrenome'=>'Azevedo'
