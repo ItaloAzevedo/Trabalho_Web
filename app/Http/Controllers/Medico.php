@@ -9,12 +9,12 @@ class Medico extends Controller
      public function listar(){
          
          
-         return view('medico.listar');
+         return view('medico_listar');
      }
      public function adicionar(){
          
          
-         return view('medico.adicionar');
+         return view('medico_adicionar');
      }
 }
 
