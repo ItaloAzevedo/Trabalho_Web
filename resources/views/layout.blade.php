@@ -2,6 +2,15 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" >
+    
+    
+    
+    
+    
+    
+    @yield("css_da_pagina")
+    
+    <title>@yield('titulo')</title>
 </head>
 <body>
     	<header class="top-area">
@@ -55,18 +64,14 @@
 									<li role="presentation" class="active">
 									 	<a href="#tours" aria-controls="tours" role="tab" data-toggle="tab">
 									 		<i class="fa fa-tree"></i>
-									 		CADASTRAR MÉDICO
+									 		@yield('nome_pg')
 									 	</a>
 									</li>
     </ul>
-    @yield('conteudo')
-<ul>
-  <li><a href="/home"><i>Página Principal</i></a>
-    </li>
-  <li><a href="/contato"><i>Fale conosco</i></a>
-    </li>
-  <li><a href="/sobre"><i>Sobre</i></a>
-    </li>
-  </ul>
+    
+    @yield('form')
+    
+    
+    @yield("js_da_pagina")
 </body>
 </html>
