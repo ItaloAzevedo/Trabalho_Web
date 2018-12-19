@@ -1,7 +1,7 @@
 Lista de especialidades
 <style type='text/css'>
 table {
-width: 15%;
+width: 50%;
 border: 2px solid black;
 margin-top: 15px;
 margin-bottom: 25px;
