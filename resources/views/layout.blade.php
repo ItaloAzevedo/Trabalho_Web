@@ -2,6 +2,15 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" >
+    
+    
+    
+    
+    
+    
+    @yield("css_da_pagina")
+    
+    <title>@yield('titulo')</title>
 </head>
 <body>
     	<header class="top-area">
@@ -9,7 +18,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-2">
-							<div class="logo">
+							<div style= "position: relative; left:516px;" class="logo">
 								<a href="index.html">
 									MC<span>CT</span>
 								</a>
@@ -24,24 +33,6 @@
 										<i class="fa fa-bars"></i>
 									</button><!-- / button-->
 								</div><!-- /.navbar-header-->
-								<div class="collapse navbar-collapse">		  
-									<ul class="nav navbar-nav navbar-right">
-										<li class="smooth-menu"><a href="#home">Início</a></li>
-										<li class="smooth-menu"><a href="#sobre">Sobre</a></li>
-										<li class="smooth-menu"><a href="#espec">Especialidades</a></li>
-										<li class="smooth-menu"><a href="#plano">Nossos planos</a></li>
-										<li class="smooth-menu"><a href="#promocao">Promoções</a></li>
-										<li class="smooth-menu"><a href="#cont">Contato</a></li>
-										<li>
-											<button class="book-btn">Entrar
-											</button>
-										</li><!--/.project-btn--> 
-										<li>
-											<button class="book-btn">Inscrever-se
-											</button>
-										</li><!--/.project-btn--> 
-									</ul>
-								</div><!-- /.navbar-collapse -->
 							</div><!-- /.main-menu-->
 						</div><!-- /.col-->
 					</div><!-- /.row -->
@@ -55,18 +46,14 @@
 									<li role="presentation" class="active">
 									 	<a href="#tours" aria-controls="tours" role="tab" data-toggle="tab">
 									 		<i class="fa fa-tree"></i>
-									 		CADASTRAR MÉDICO
+									 		@yield('nome_pg')
 									 	</a>
 									</li>
     </ul>
-    @yield('conteudo')
-<ul>
-  <li><a href="/home"><i>Página Principal</i></a>
-    </li>
-  <li><a href="/contato"><i>Fale conosco</i></a>
-    </li>
-  <li><a href="/sobre"><i>Sobre</i></a>
-    </li>
-  </ul>
+    
+    @yield('form')
+    
+    
+    @yield("js_da_pagina")
 </body>
 </html>
