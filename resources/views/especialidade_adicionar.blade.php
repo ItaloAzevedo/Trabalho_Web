@@ -22,18 +22,6 @@ Cadastro de especialidades
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @section("css_da_pagina")
 
     <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet" />

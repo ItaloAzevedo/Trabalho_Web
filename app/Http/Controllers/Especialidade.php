@@ -5,11 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use  App\Models\Especialidade as EspecialidadeModel;
 
-class Especialidade extends Controller
-{
+class Especialidade extends Controller{
     public function listar(){
       
-        $lista_especialidades = EspecialidadeModel::orderBy('descricao', 'asc')->paginate(10);
+        $lista_especialidades = EspecialidadeModel::orderBy('id', 'asc')->paginate(10);
         
         
         return view('especialidade_listar', [

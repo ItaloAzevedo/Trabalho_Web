@@ -1,19 +1,41 @@
 Lista de especialidades
+<style type='text/css'>
+table {
+width: 15%;
+border: 2px solid black;
+margin-top: 15px;
+margin-bottom: 25px;
+position: relative;
+left: 42%;
 
-
-
-<div class="travel-select-icon">
-    <select class="form-control " name="id_especialidade">
-        <option value="default">Selecione a especialidade desejada</option>
+}
+td {
+border: 1px solid;
+padding: 5px;
+}
+th {
+font-family: "Trebuchet MS", Arial, Verdana;
+font-size: 17px;
+padding: 5px;
+border: 1px solid;
+border-width: 1px;
+border-style: 2px solid black;
+border-color: black;
+background-color: #30a9dd;
+color: black;
+}
+</style>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Descrição</th> 
+  </tr>
+ 
         <?php foreach(  $lista_especialidades     as  $e ) {  ?>
-
-                <option value="<?php echo $e['id']; ?>"> <?php echo $e['descricao']; ?></option><!-- /.option-->
-
-       <?php 
+        <tr>
+            <?php echo '<td>'.$e['id'].'</td>'; echo '<td>'.$e['descricao'].'</td>'; ?>
+         </tr>
+        <?php 
             }
-
         ?>
-
-
-    </select><!-- /.select-->
-</div>
+</table>
