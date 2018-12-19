@@ -7,14 +7,17 @@
 @endsection
 
 @section('nome_pg')
-Cadastra especialidade
+Cadastro de especialidades
 @endsection
 
 @section('form')
-<input class="form-control col-sm-8 ho" type="text" id="descricao" name="descricao" placeholder="Digite o nome da especialidade">
-<button type="submit" class="about-view travel-btn" name="cadastrar">
+<div style="position: relative; left: 31%; top: 15px;">
+<h2 style="position: relative; left: 25px;">DESCRIÇÃO DA ESPECIALIDADE</h2>
+<input class="form-control col-sm-8 ho" type="text" id="descricao" name="descricao">
+<button type="submit" class="about-view travel-btn" name="cadastrar" style="position: relative;top: 60px;right: 337px;">
     Cadastrar										
 </button>
+</div>
 @endsection
 
 
@@ -97,6 +100,41 @@ Cadastra especialidade
 
 
 @section("js_da_pagina")
+		<script src="{{asset('/js/jquery.js')}}"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
 
+		<!--modernizr.min.js-->
+		<script  src="{{asset('/js/modernizr.min.js')}}"></script>
+
+
+		<!--bootstrap.min.js-->
+		<script  src="{{asset('/js/bootstrap.min.js')}}"></script>
+
+		<!-- bootsnav js -->
+		<script src="{{asset('/js/bootsnav.js')}}"></script>
+
+		<!-- jquery.filterizr.min.js -->
+		<script src="{{asset('/js/jquery.filterizr.min.js')}}"></script>
+
+		<script  src="{{asset('/js/jquery.easing.min.js')}}"></script>
+
+		<!--jquery-ui.min.js-->
+        <script src="{{asset('/js/jquery-ui.min.js')}}"></script>
+
+        <!-- counter js -->
+		<script src="{{asset('/js/jquery.counterup.min.js')}}"></script>
+		<script src="{{asset('/js/waypoints.min.js')}}"></script>
+
+		<!--owl.carousel.js-->
+        <script  src="{{asset('/js/owl.carousel.min.js')}}"></script>
+
+        <!-- jquery.sticky.js -->
+		<script src="{{asset('/js/jquery.sticky.js')}}"></script>
+
+        <!--datepicker.js-->
+        <script  src="{{asset('/js/datepicker.js')}}"></script>
+
+		<!--Custom JS-->
+		<script src="{{asset('/js/custom.js')}}"></script>
 
 @endsection
