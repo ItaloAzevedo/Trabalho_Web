@@ -19,7 +19,7 @@
 					<div class="row">
 						<div class="col-sm-2">
 							<div style= "position: relative; left:516px;" class="logo">
-								<a href="index.html">
+                                <a href="index.html">
 									MC<span>CT</span>
 								</a>
 							</div><!-- /.logo-->
