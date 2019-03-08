@@ -13,19 +13,15 @@ class Medico extends Controller
         return view('medico_listar', ['lista_medicos' => $lista_medicos]);
     }
     
-     public function adicionar(){
-         
-        $adicionar = new Medico();
-        $adicionar->id_funcao = 1;
-        $adicionar->nome = $request->nome;
-        $adicionar->email = $request->email;
-        $adicionar->login = $request->login;
-        $adicionar->senha = $request->senha;
-        $adicionar->cpf = $request->cpf;
-        $adicionar->cadastrar();
-        /*/ $medico_adicionar =  $query = "INSERT INTO usuarios (id_funcao, nome, email, login, senha, cpf) 
-        VALUES (1, :nome, :email, :login, :senha, :cpf)";/*/
-         return view('medico_adicionar');
+     public function adicionar(Request $request, Medico $medico){
+         $medico->id_funcao = 1;
+         $medico->nome = $request->nome;
+         $medico->email = $request->email;
+         $medico->login = $request->login;
+         $medico->senha = $request->senha;
+         $medico->cpf = $request->cpf;
+         $medico->adicionar();
+         //https://blog.especializati.com.br/cadastrando-dados-no-laravel-mvc/
      }
 }
 

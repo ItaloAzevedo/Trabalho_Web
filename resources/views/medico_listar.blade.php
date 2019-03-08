@@ -34,7 +34,6 @@ color: black;
 </style>
 <table>
   <tr>
-    <th>Id</th>
     <th>Nome</th> 
     <th>Email</th>
     <th>CPF</th> 
@@ -42,7 +41,7 @@ color: black;
  
         <?php foreach(  $lista_medicos     as  $m ) {  ?>
         <tr>
-            <?php echo '<td>'.$m['id'].'</td>';echo '<td>'.$m['nome'].'</td>';echo '<td>'.$m['email'].'</td>';echo '<td>'.$m['cpf'].'</td>' ?>
+            <?php echo '<td>'.$m['nome'].'</td>';echo '<td>'.$m['email'].'</td>';echo '<td>'.$m['cpf'].'</td>' ?>
          </tr>
         <?php 
             }
